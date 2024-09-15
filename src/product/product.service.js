@@ -1,9 +1,9 @@
-const products = require("../data/products.json");
+const data = require("../data/products.json");
 function list() {
-  return products;
+  return data;
 }
 function getProductDetail(id){
-  return products.data.find(item=>item.id==id);
+  return data.products.find(item=>item.id==id);
 }
 module.exports = {
   list,
